@@ -47,3 +47,25 @@ Clientul MQTT v5 utilizează mai multe tipuri de pachete pentru a gestiona comun
 Această diagramă ilustrează fluxul de mesaje într-un client MQTT v5, evidențiind interacțiunile dintre principalele componente: brokerul MQTT, publisher-ul și subscriber-ul.
 
 ![img](Diagrama_MQTTv5_Actualizata.png)
+
+
+## Interfața Clientului MQTT
+
+Clientul MQTT dispune de o interfață în care utilizatorul introduce date esențiale pentru conectarea la broker.
+![Interfața Clientului MQTT](interfata.png)
+
+După completarea corectă a datelor și trimiterea pachetului CONNECT, brokerul Mosquitto procesează cererea și răspunde cu un mesaj CONNACK în cazul unei conectări reușite.
+
+Odată ce conexiunea este stabilită, utilizatorul poate selecta unul dintre cele două roluri principale ale clientului:
+1. **Publisher**:
+   - Acest rol permite utilizatorului să publice mesaje pe diferite topicuri. Utilizatorul poate alege să publice informații periodice sau să răspundă la evenimente, cum ar fi monitorizarea parametrelor de sistem (utilizare CPU, memorie, etc.).
+   - Mesajele sunt publicate cu diferite QoS-uri pentru a asigura livrarea corectă a acestora.
+
+2. **Subscriber**:
+   - Rolul de abonat permite utilizatorului să se aboneze la topicuri și să primească mesaje trimise de alți publicatori.
+   - Abonatul poate alege topicuri specifice la care dorește să primească actualizări și poate solicita un nivel de QoS pentru a controla fiabilitatea livrării mesajelor.
+
+![Publisher](publisher.png)
+![Subscriber](subscriber.png)
+
+Toate pachetele trimise și primite de clientul MQTT pot fi vizualizate în Wireshark, oferind o modalitate ușoară de a verifica comunicațiile între client și broker.
