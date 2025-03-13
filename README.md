@@ -41,3 +41,6 @@ Clientul MQTT v5 utilizează mai multe tipuri de pachete pentru a gestiona comun
 ## Tehnologii Folosite
 - **Socket**: Pentru gestionarea conexiunii și a pachetelor MQTT.
 - **Mosquitto Broker**: Broker MQTT folosit pentru gestionarea mesajelor.
+
+
+![Descrierea imaginii](Diagrama_MQTTv5_Actualizata.png)
