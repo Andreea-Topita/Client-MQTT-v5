@@ -39,6 +39,5 @@ Clientul MQTT v5 utilizează mai multe tipuri de pachete pentru a gestiona comun
 - Mecanismul de menținere a conexiunii activă între client și broker prin trimiterea periodică a pachetelor PINGREQ și răspunsurilor PINGRESP.
 
 ## Tehnologii Folosite
-- **Python**: Implementarea clientului MQTT folosind Python.
 - **Socket**: Pentru gestionarea conexiunii și a pachetelor MQTT.
 - **Mosquitto Broker**: Broker MQTT folosit pentru gestionarea mesajelor.
