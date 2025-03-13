@@ -42,5 +42,8 @@ Clientul MQTT v5 utilizează mai multe tipuri de pachete pentru a gestiona comun
 - **Socket**: Pentru gestionarea conexiunii și a pachetelor MQTT.
 - **Mosquitto Broker**: Broker MQTT folosit pentru gestionarea mesajelor.
 
+## Diagrama Client MQTT v5
 
-![Descrierea imaginii](Diagrama_MQTTv5_Actualizata.png)
+Această diagramă ilustrează fluxul de mesaje într-un client MQTT v5, evidențiind interacțiunile dintre principalele componente: brokerul MQTT, publisher-ul și subscriber-ul.
+
+![img](Diagrama_MQTTv5_Actualizata.png)
