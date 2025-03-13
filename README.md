@@ -52,7 +52,7 @@ Această diagramă ilustrează fluxul de mesaje într-un client MQTT v5, eviden�
 ## Interfața Clientului MQTT
 
 Clientul MQTT dispune de o interfață în care utilizatorul introduce date esențiale pentru conectarea la broker.
-![Interfața Clientului MQTT](interfata.png)
+![Interfața Clientului MQTT](interface.jpg)
 
 După completarea corectă a datelor și trimiterea pachetului CONNECT, brokerul Mosquitto procesează cererea și răspunde cu un mesaj CONNACK în cazul unei conectări reușite.
 
@@ -65,7 +65,7 @@ Odată ce conexiunea este stabilită, utilizatorul poate selecta unul dintre cel
    - Rolul de abonat permite utilizatorului să se aboneze la topicuri și să primească mesaje trimise de alți publicatori.
    - Abonatul poate alege topicuri specifice la care dorește să primească actualizări și poate solicita un nivel de QoS pentru a controla fiabilitatea livrării mesajelor.
 
-![Publisher](publisher.png)
-![Subscriber](subscriber.png)
+![Publisher](publisher.jpg)
+![Subscriber](subscriber.jpg)
 
 Toate pachetele trimise și primite de clientul MQTT pot fi vizualizate în Wireshark, oferind o modalitate ușoară de a verifica comunicațiile între client și broker.
