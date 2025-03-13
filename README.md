@@ -1,4 +1,4 @@
-# MQTT Client - Client MQTT v5
+# MQTT Client MQTT v5
 
 ## Introducere
 MQTT v5 (Message Queuing Telemetry Transport) este un protocol de transport al mesajelor bazat pe TCP/IP, utilizat pentru comunicarea între clienți și brokeri într-o arhitectură publicare/abonare. Acesta este utilizat pe scară largă în aplicațiile IoT, datorită eficienței și fiabilității sale în comunicarea între dispozitivele cu resurse limitate. În acest proiect, am implementat un client MQTT v5 care se conectează la un broker, publică mesaje pe topicuri și se abonează la topicuri pentru a primi mesaje.
